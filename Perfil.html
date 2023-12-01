@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <style>
+        /* Coloque aqui o seu CSS */
+    </style>
+    <script>
+        // Coloque aqui o seu JavaScript
+    </script>
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <div id="logo">
+                <a href="index.html"><img width="" height="" src="assets/img/logosemfundo.png" alt=""></a>
+                <!-- Uncomment below if you prefer to use a text logo -->
+                <!--<h1><a href="index.html">MSH</a></h1>-->
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#sobre">MSH</a></li>
+                    <li><a class="nav-link scrollto" href="#serviços">Serviços</a></li>
+                    <li><a class="nav-link scrollto " href="#parcerias">Parcerias</a></li>
+                    <li><a class="nav-link scrollto" href="time">time</a></li>
+
+                    <!-- Tabela para exibir o menu -->
+
+                    <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- final Header -->
+        </div>
+    </header><!-- final Header -->
+    <br>
+    <br>
+
+    <div tabindex="-1" class="profile-background-image profile-background-image--default">
+        <img width="200" height="200" src="" alt="" id="ember247"
+            class="evi-image ember-view profile-photo-edit__preview">
+        <!-- Conteúdo da imagem de fundo do perfil -->
+        <!-- Conteúdo da foto de perfil -->
+        <div class="profile-photo-edit pv-top-card__edit-photo">
+            <!-- Nome do perfil -->
+            <h1>User</h1>
+            </button>
+        </div>
+    </div>
+    <div class="ph5">
+        <div class="display-flex">
+            <div class="pv-top-card--photo text-align-left pv-top-card--photo-resize">
+                <div class="pv-top-card__photo-wrapper ml0">
+
+                    <div class="pv-top-card__badge-wrap">
+                        <!-- Conteúdo dos distintivos -->
+                        <div>
+                            <a href="" id="ember248" class="ember-view" tabindex="-1">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <ul class="pv-text-details__right-panel">
+    </ul>
+    <div class="pv-text-details__left-panel mt2">
+
+        <body>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+
+                        <div class="pv-text-details__left-panel mt2">
+
+                            <div class="profile2">
+                                <button id="btnnfavoritos">Favoritos </button></br>
+                                <button id="calcbutton">Calculadora </button></br>
+                                <button id="botaoAbrirBlocoDeNotas">Notas</button></br>
+                                <div>
+                                    <div>
+                                    </div>
+                                    <div>
+                                        <div>
+
+                                            <div class="container">
+
+                                                <div id="codigoContainer">
+                                                    <h1>Calculadora de Gastos</h1>
+
+                                                    <div class="calculadoraReal">
+                                                        <div class="form-group">
+                                                            <label for="valor">Digite o valor:</label>
+                                                            <input type="number" id="valor" min="0">
+                                                        </div>
+                                                        <button onclick="calcularDivisao()">Calcular</button>
+
+                                                        <div class="result">
+                                                            <h3>Resultados:</h3>
+                                                            <p>Gastos fixo (50%): <span id="resultado1"></span></p>
+                                                            <p>Gastos variáveis (30%): <span id="resultado2"></span></p>
+                                                            <p>Reserva de emergência (20%): <span
+                                                                    id="resultado3"></span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div id="blocoDeNotasDiv">
+                                                    <input type="text" id="titulo" placeholder="Título"> <br>
+                                                    <input type="text" id="assunto" placeholder="Assunto"> <br>
+                                                    <button onclick="salvarNota()">Salvar</button>
+                                                    <div id="notasContainer"></div>
+                                                </div>
+
+
+                                            </div>
+
+                                            <div id="areafavorito">
+                                                <!-- vou tentar fazer esse depois -->
+                                                <h1>bom dia </h1>
+                                            
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+        </body>
+
+    </div><br>
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; My Sweet Home. Todos os Direitos Reservados
+            </div>
+            <div class="credits">
+
+                </a>
+            </div>
+        </div><br>
+    </footer><!-- fim do rodapé -->
+
+    <script>
+
+        const btncalc = document.getElementById("calcbutton")
+        btncalc.addEventListener("click", funcCalc)
+        function funcCalc() {
+            if( document.getElementById("codigoContainer").style.display = "none"){
+            document.getElementById("codigoContainer").style.display = "block"
+            document.getElementById("blocoDeNotasDiv").style.display = "none"
+            document.getElementById("areafavorito").style.display = "none"
+            }
+        }
+
+        const btnblocn = document.getElementById("botaoAbrirBlocoDeNotas")
+        btnblocn.addEventListener("click", funcblock)
+        function funcblock() {
+            if( document.getElementById("blocoDeNotasDiv").style.display = "none"){
+            document.getElementById("codigoContainer").style.display = "none"
+            document.getElementById("blocoDeNotasDiv").style.display = "block"
+            document.getElementById("areafavorito").style.display = "none"
+            }        
+        }
+
+        const btnfav = document.getElementById("btnnfavoritos")
+        btnfav.addEventListener("click", funcfav)
+        function funcfav() {
+            if( document.getElementById("areafavorito").style.display = "none"){
+            document.getElementById("codigoContainer").style.display = "none"
+            document.getElementById("blocoDeNotasDiv").style.display = "none"
+            document.getElementById("areafavorito").style.display = "block"
+            }         }
+
+
+        function separarNumero() {
+            var inputValor = document.getElementById("valor");
+            var valor = inputValor.value;
+
+            var gastosFixos = valor * 0.5;
+            var gastosVariaveis = valor * 0.3;
+            var reservaEmergencia = valor * 0.2;
+
+            document.getElementById("resultado1").innerText = gastosFixos.toFixed(2);
+            document.getElementById("resultado2").innerText = gastosVariaveis.toFixed(2);
+            document.getElementById("resultado3").innerText = reservaEmergencia.toFixed(2);
+        }
+
+        function calcularDivisao() {
+            separarNumero();
+        }
+
+        function salvarNota() {
+            var titulo = document.getElementById("titulo").value;
+            var assunto = document.getElementById("assunto").value;
+
+            var nota = document.createElement("div");
+            nota.innerHTML = "<h4>" + titulo + "</h4><p>" + assunto + "</p>";
+            document.getElementById("notasContainer").appendChild(nota);
+
+            document.getElementById("titulo").value = "";
+            document.getElementById("assunto").value = "";
+        }
+
+    </script>
+
+
+    <style>
+        #codigoContainer {
+            display: none;
+        }
+
+        #blocoDeNotasDiv {
+            display: none;
+        }
+        
+        #areafavorito {
+            display: none;
+        }
+    </style>
+</body>
+
+</html>
