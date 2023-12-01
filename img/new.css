@@ -1,0 +1,156 @@
+/*.tela-inteira {
+    width: 100%;
+    height: 100vh;  100% da altura da viewport 
+    background-image: url('cidade.jpg'); 
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir a div 
+    background-position: center; /Centraliza a imagem 
+    background-repeat: no-repeat; /Evita a repetição da imagem 
+    position: relative;
+}*/
+
+.logo {
+  padding: 0;
+  margin: 0;
+}
+
+.lupa {
+  width: 40px; /* Largura do contêiner */
+  height: 20px; /* Altura do contêiner */
+  border: 0px solid #ec0808; /* Apenas para visualização */
+  display: flex; /* Torna o contêiner um flex container */
+  justify-content: right; /* Alinha horizontalmente ao centro */
+  align-items: right center; /* Alinha verticalmente ao centro */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+} /*mantem o cabeçalho alinhado ao navegador sem margem*/
+
+body {
+  font-family: "Poppins", sans-serif; /*Tipografia/fonte*/
+  color: #0f0f0f; /* mudar cor do nossa sede e deixe seu contato*/
+}
+
+/*Botão menu*/
+.dp-menu ul {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+}
+
+/*barra de menu*/
+.dp-menu ul {
+  background-color: #000;
+}
+
+.dp-menu ul li a {
+  color: #fff; /*letras do menu e submenu*/
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px; /*margem acima dos elementos do cabeçalho*/
+}
+
+/*sub menu*/
+/*esconder sub menu*/
+.dp-menu ul ul {
+  display: none;
+  left: 0;
+  position: absolute;
+}
+
+/*lista dentro do submenu*/
+.dp-menu ul li:hover ul {
+  display: block;
+}
+
+/*formato da lista de sub menu*/
+.dp-menu ul ul {
+  width: 120px; /*tamanho do botão do submenu*/
+}
+
+
+/*4 botões artigo*/
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+
+
+
+
+
+
+
+
+
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+
+
+/* Estilo do rodapé */
+footer {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  align-items: center;
+  color: #fff; /* cor do texto do rodapé*/
+  padding: 20px; /*largura do rodapé*/
+  text-align: bottom;
+}
